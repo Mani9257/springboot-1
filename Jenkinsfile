@@ -9,7 +9,7 @@ pipeline {
         stage('build') {
             steps {
 		withSonarQubeEnv('sonar') {
-        	        		sh "C:\apache-maven-3.6.2\bin\mvn clean verify sonar:sonar"
+        	        		sh "C:\apache-maven-3.6.2\bin clean install sonar:sonar"
 		}
             }
         }
