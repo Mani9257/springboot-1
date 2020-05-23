@@ -13,7 +13,7 @@ pipeline {
             steps {
 		withSonarQubeEnv('sonar') 
 		    {
-        	sh "${mvnHome}/bin/mvn clean install -Dmaven.test.skip=true"
+        	sh "${mvnHome}/bin/mvn clean install"
 		}
             }
 }
