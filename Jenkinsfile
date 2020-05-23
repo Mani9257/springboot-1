@@ -1,6 +1,6 @@
 node{
       stage('Checkout'){
-         git 'https://https://github.com/Mani9257/springboot-1'
+         git 'https://github.com/Mani9257/springboot-1'
        }  
       stage('Build'){
          //// Get maven home path and build
