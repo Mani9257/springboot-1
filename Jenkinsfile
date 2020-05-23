@@ -13,7 +13,7 @@ pipeline {
             steps {
 		withSonarQubeEnv('sonar') 
 		    {
-        	sh "${mvnHome}/bin/mvn clean install"
+        	sh "mvn clean install"
 		}
             }
 }
