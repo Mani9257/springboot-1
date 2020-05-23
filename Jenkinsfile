@@ -13,7 +13,7 @@ pipeline {
             steps {
 		withSonarQubeEnv('sonar') 
 		    {
-        	 sh "\apache-maven-3.6.2\bin\mvn clean install"
+        	sh "${mvnHome}/bin/mvn clean package -Dmaven.test.skip=true"
 		}
             }
 }
