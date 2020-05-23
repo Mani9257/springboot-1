@@ -1,5 +1,5 @@
 node{
-      def MAVEN-HOME = tool name: 'maven 3.6.2', type: 'maven' 
+      def tool name: 'MAVEN-HOME', type: 'maven' 
       stage('Checkout'){
          git 'https://https://github.com/Mani9257/springboot-1.git'
        
