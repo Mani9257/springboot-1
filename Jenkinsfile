@@ -13,7 +13,7 @@ pipeline {
             steps {
 		withSonarQubeEnv('sonar') 
 		    {
-        	sh "C:\apache-maven-3.6.2\bin\mvn.cmd clean install sonar:sonar"
+        	$ cmd.exe /C "C:\apache-maven-3.6.2\bin\mvn.cmd clean install sonar:sonar && exit %%ERRORLEVEL%%"
 		}
             }
 }
