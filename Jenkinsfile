@@ -5,7 +5,7 @@ node{
       stage('Build'){
          //// Get maven home path and build
             //// def mvnHome = tool name: 'MAVEN-HOME', type: 'maven' 
-        sh "C:/apache-maven-3.6.2/bin/mvn clean install"
+        sh "*/apache-maven-3.6.2/bin/mvn clean install"
       }
 }
             
